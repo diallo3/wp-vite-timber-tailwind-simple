@@ -13,7 +13,9 @@
 	"dependencies": {
 		"alpinejs": "^3.14.8",
 		"baselayer.css": "latest",
-		"js-cookie": "latest"
+		"js-cookie": "latest",
+		"motion": "^11.18.0",
+		"swup": "^4.8.1"
 	},
 	"devDependencies": {
 		"autoprefixer": "^10.4.20",
