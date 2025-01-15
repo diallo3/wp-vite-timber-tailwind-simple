@@ -6,17 +6,15 @@ if (import.meta.hot) {
 	});
 }
 
+// Import JS Modules
+import { initializeAlpine } from './modules/js/module-alpine';
+
 // SCSS
 import './style.css';
 
 // glob import all scss files
-import.meta.glob('../templates/**/*.scss', { eager: true });
+import.meta.glob('../templates/**/*.css', { eager: true });
 
-// component imports
-import Menu from '../templates/components/menu/menu';
-
-const menu = document.querySelector('nav.menu');
-if (menu) {
-	console.log(menu);
-	new Menu(menu);
-}
+document.addEventListener('DOMContentLoaded', () => {
+	initializeAlpine();
+});

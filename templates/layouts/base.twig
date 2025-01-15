@@ -31,7 +31,9 @@
 
 	</head>
 
-	<body class="{{ body_class }} bg-black">
+	<body 
+		x-init="console.log('Im initing')"
+		class="{{ body_class }} bg-black" x-init="init = true">
 	
 		{% block alert %}
 			{% for alert in alerts %}
